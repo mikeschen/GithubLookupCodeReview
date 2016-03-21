@@ -5,5 +5,5 @@ exports.lookUp =  function(username) {
 };
 
 exports.lookUp.prototype.findUser = function() {
-  return 'https://api.github.com/users/' + this.username + '/repos';
+  return 'https://api.github.com/users/' + this.username + '/repos?access_token=' + apiKey;
 };
